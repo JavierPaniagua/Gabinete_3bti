@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>On / Off</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: gray;
+    }
+
+    .caja {     
+      display: flex;              /* activa flexbox */
+      justify-content: center;    /* centra horizontalmente */
+      gap: 20px;                  /* espacio entre botones */
+      margin-top: 50px;
+    }
+    
+    .bloque {
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+    
+    <div class="bloque">
+        <h1>Botones On/Off con this</h1>
+    
+        <div class="caja"></div>
+        <button onclick="turnOff(this)">On</button>
+        <button onclick="turnOff(this)">On</button>
+        <button onclick="turnOff(this)">On</button>
+    </div>
+    </div>
+
+  <script>
+    function turnOff(element) {
+      if (element.innerText === "On") {
+        element.innerText = "Off";
+        element.style.backgroundColor = "lightcoral"; // rojo claro
+       
+      } else {
+        element.innerText = "On";
+        element.style.backgroundColor = "lightgreen"; // verde claro
+        
+      }
+    }
+  </script>
+</body>
+</html>
